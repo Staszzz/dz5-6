@@ -1,0 +1,104 @@
+
+
+2024-02-19 14:16:47,163 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 14:19:37,332 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 14:20:10,673 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 14:20:10,764 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 14:20:31,151 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 14:20:35,157 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 14:21:33,789 INFO P.Add_Personal_dataTest [main] Clear fields success
+2024-02-19 14:21:34,566 INFO P.Add_Personal_dataTest [main] Add names and date birthday success
+2024-02-19 14:21:55,118 INFO P.Add_Personal_dataTest [main] Add country and city success
+2024-02-19 14:21:55,312 INFO P.Add_Personal_dataTest [main] Add english level success
+2024-02-19 14:21:55,430 INFO P.Add_Personal_dataTest [main] Relocate switch success
+2024-02-19 14:22:15,629 INFO P.Add_Personal_dataTest [main] Add work format success
+2024-02-19 14:22:16,162 INFO P.Add_Personal_dataTest [main] Add 1 communication method success
+2024-02-19 14:22:16,425 INFO P.Add_Personal_dataTest [main] Add 2 communication method success
+2024-02-19 14:22:16,591 INFO P.Add_Personal_dataTest [main] Add gender success
+2024-02-19 14:22:16,868 INFO P.Add_Personal_dataTest [main] Add work information success
+2024-02-19 14:23:16,461 INFO P.Add_Personal_dataTest [main] save data success
+2024-02-19 14:23:16,817 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 14:23:17,932 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 14:23:38,418 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 14:23:38,493 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 14:23:58,731 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 14:24:01,694 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 14:24:48,257 INFO P.Add_Personal_dataTest [main] data checked
+2024-02-19 14:24:48,693 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:01:11,668 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:01:17,219 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:01:17,322 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:01:37,345 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 15:01:58,387 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 15:01:58,712 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:01:59,781 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:02:58,248 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:03:56,736 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:07:14,478 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:09:24,861 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:09:24,992 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:09:45,322 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 15:09:52,414 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 15:10:36,130 INFO P.Add_Personal_dataTest [main] Clear fields success
+2024-02-19 15:10:37,039 INFO P.Add_Personal_dataTest [main] Add names and date birthday success
+2024-02-19 15:10:57,850 INFO P.Add_Personal_dataTest [main] Add country and city success
+2024-02-19 15:10:58,022 INFO P.Add_Personal_dataTest [main] Add english level success
+2024-02-19 15:10:58,098 INFO P.Add_Personal_dataTest [main] Relocate switch success
+2024-02-19 15:11:18,393 INFO P.Add_Personal_dataTest [main] Add work format success
+2024-02-19 15:11:18,933 INFO P.Add_Personal_dataTest [main] Add 1 communication method success
+2024-02-19 15:11:19,237 INFO P.Add_Personal_dataTest [main] Add 2 communication method success
+2024-02-19 15:11:19,396 INFO P.Add_Personal_dataTest [main] Add gender success
+2024-02-19 15:11:19,766 INFO P.Add_Personal_dataTest [main] Add work information success
+2024-02-19 15:14:40,835 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:14:42,006 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:14:49,069 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:14:49,254 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:24:34,643 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:24:37,956 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:24:38,625 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:24:59,108 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 15:25:05,902 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 15:26:01,301 INFO P.Add_Personal_dataTest [main] Clear fields success
+2024-02-19 15:26:02,517 INFO P.Add_Personal_dataTest [main] Add names and date birthday success
+2024-02-19 15:26:24,983 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:26:26,254 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:26:26,624 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:27:04,826 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:30:12,767 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:30:14,328 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:49:30,662 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:49:37,074 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:49:37,345 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:49:57,680 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 15:50:00,270 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 15:50:01,422 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:50:03,428 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:50:03,746 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:50:09,067 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:50:29,205 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 15:50:31,870 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 15:51:08,455 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:53:57,820 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:54:03,581 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:54:03,694 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:54:24,060 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 15:54:26,577 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 15:54:59,738 INFO P.Add_Personal_dataTest [main] Clear fields success
+2024-02-19 15:55:00,607 INFO P.Add_Personal_dataTest [main] Add names and date birthday success
+2024-02-19 15:55:21,318 INFO P.Add_Personal_dataTest [main] Add country and city success
+2024-02-19 15:55:21,492 INFO P.Add_Personal_dataTest [main] Add english level success
+2024-02-19 15:55:21,655 INFO P.Add_Personal_dataTest [main] Relocate switch success
+2024-02-19 15:55:41,992 INFO P.Add_Personal_dataTest [main] Add work format success
+2024-02-19 15:55:42,484 INFO P.Add_Personal_dataTest [main] Add 1 communication method success
+2024-02-19 15:55:42,815 INFO P.Add_Personal_dataTest [main] Add 2 communication method success
+2024-02-19 15:55:42,982 INFO P.Add_Personal_dataTest [main] Add gender success
+2024-02-19 15:55:43,388 INFO P.Add_Personal_dataTest [main] Add work information success
+2024-02-19 15:56:25,810 INFO P.Add_Personal_dataTest [main] save data success
+2024-02-19 15:56:26,392 INFO P.Add_Personal_dataTest [main] Stop driver
+2024-02-19 15:56:27,978 INFO P.Add_Personal_dataTest [main] Start driver
+2024-02-19 15:56:33,552 INFO P.Add_Personal_dataTest [main] Waiting marker tel
+2024-02-19 15:56:33,690 INFO P.Add_Personal_dataTest [main] Check status auth popup
+2024-02-19 15:56:53,799 INFO P.Add_Personal_dataTest [main] Start of test logic. Login in LK
+2024-02-19 15:56:56,519 INFO P.Add_Personal_dataTest [main] Login in LK success. Switch personal data page
+2024-02-19 15:57:30,000 INFO P.Add_Personal_dataTest [main] data checked
+2024-02-19 15:57:31,039 INFO P.Add_Personal_dataTest [main] Stop driver
