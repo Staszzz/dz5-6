@@ -14,7 +14,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class PersonalDataPage extends AbsCommon {
-
+    String english;
+    String selectCountry;
+    String city;
     public PersonalDataPage(WebDriver driver) {
         super(driver);
     }
@@ -34,6 +36,8 @@ public class PersonalDataPage extends AbsCommon {
         WebElement russiaSelectElement = driver.findElement(By.cssSelector("[data-slave-selector='.js-lk-cv-dependent-slave-city']"));
         russiaSelectElement.click();
 
+         selectCountry = cityData.getCountriesData().getCountry();
+
         WebElement countryListContainer = russiaSelectElement
                 .findElement(By.xpath(".//*[contains(@class, 'js-custom-select-presentation')]"));
         waitTools.waitForCondition(ExpectedConditions.not(ExpectedConditions
@@ -50,6 +54,7 @@ public class PersonalDataPage extends AbsCommon {
         WebElement citySelectElement = driver.findElement(By.xpath("//*[contains(@class, 'js-lk-cv-dependent-slave-city')]"));
         citySelectElement.click();
 
+        city = cityData.getName();
         WebElement cityListContainer = citySelectElement
                 .findElement(By.xpath(".//*[contains(@class, 'js-custom-select-options-container')]"));
         waitTools.waitForCondition(ExpectedConditions.not(ExpectedConditions
@@ -66,6 +71,7 @@ public class PersonalDataPage extends AbsCommon {
                 .xpath("//input[@name='english_level']/ancestor:: div[contains(@class, 'js-lk-cv-custom-select')]"));
         englishLevelSelectElement.click();
 
+        english = englishLevel.getEnglishLevel();
         WebElement levelListContainer = englishLevelSelectElement
                 .findElement(By.xpath(".//*[contains(@class, 'js-custom-select-options-container')]"));
         waitTools.waitForCondition(ExpectedConditions.not(ExpectedConditions
@@ -124,21 +130,28 @@ public class PersonalDataPage extends AbsCommon {
         driver.findElement(By.cssSelector("button[name='continue']")).click();
     }
 
-    public void assertFieldsData(InputFieldData inputFieldData) {
-        Assertions
-                .assertTrue(!driver.findElement
-                                (By.cssSelector(String.format("input[name='%s']", inputFieldData.getName())))
-                        .getAttribute("value").isEmpty());
+
+    public void assertFieldsNameData(String inputDNames, String fakerName) {
+        String fakerValue = driver.findElement
+                (By.cssSelector(String.format("input[name='%s']", inputDNames))).getAttribute("value");
+
+        Assertions.assertEquals(fakerValue, fakerName);
     }
 
-    public void checkFieldsDataIsEmpty() {
-        Assertions.assertTrue(!driver.findElement(By.cssSelector(".js-lk-cv-dependent-master > label:nth-child(1) > div:nth-child(2)")).getText().isEmpty());
-        Assertions.assertTrue(!driver.findElement(By.cssSelector(".js-lk-cv-dependent-slave-city > label:nth-child(1) > div:nth-child(2)")).getText().isEmpty());
-        Assertions.assertTrue(!driver.findElement(By.xpath("//input[@name='english_level']/ancestor:: div[contains(@class, 'js-lk-cv-custom-select')]")).getText().isEmpty());
+
+    public void assertFieldsData() {
+        Assertions.assertEquals(selectCountry, driver.findElement(By.cssSelector(".js-lk-cv-dependent-master > " +
+                "label:nth-child(1) > div:nth-child(2)")).getText());
+
+        Assertions.assertEquals(city, driver.findElement(By.cssSelector(".js-lk-cv-dependent-slave-city >" +
+                " label:nth-child(1) > div:nth-child(2)")).getText());
+
+        Assertions.assertEquals(english, driver.findElement(By.xpath("//input[@name='english_level']/" +
+                "ancestor:: div[contains(@class, 'js-lk-cv-custom-select')]")).getText());
+
         Assertions.assertTrue(driver.findElement(By.xpath("//input[@id='id_ready_to_relocate_1']")).isSelected());
+
         Assertions.assertTrue(driver.findElement(By.cssSelector("input[title='Удаленно']")).isSelected());
-        Assertions.assertTrue(!driver.findElement(By.id("id_contact-2-value")).getAttribute("value").isEmpty());
-        Assertions.assertTrue(!driver.findElement(By.id("id_contact-3-value")).getAttribute("value").isEmpty());
-        Assertions.assertTrue(!driver.findElement(By.id("id_gender")).getAttribute("value").isEmpty());
-    }
+
+        }
     }
