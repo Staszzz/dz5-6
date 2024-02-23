@@ -15,7 +15,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Logger;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import pages.MainPage;
@@ -29,6 +28,10 @@ public class AddPersonalDataTest {
 
     private WebDriver driver;
     protected Faker faker = new Faker();
+    String fakerName;
+    String fakerNamelatin;
+    String fakerLname;
+    String fakerLnamelatin;
 
     @BeforeEach
 
@@ -46,7 +49,6 @@ public class AddPersonalDataTest {
     }
 
     @Test
-    @Order(1)
 
     public void savePersonalData() {
 
@@ -127,47 +129,36 @@ public class AddPersonalDataTest {
 
         personalData.clickSavePersonalData();
         logger.info("save data success");
-    }
 
-    @Test
-    @Order(2)
+        new MainPage(driver).open("/");
+        logger.info("Waiting marker tel");
 
-        public void checkProfileData () {
-            new MainPage(driver).open();
+        header.waitMarkerTelNumber();
+        header.waitSignInBtnIsPresent();
+        header.waitSignInBtnToBeClicable();
 
-            logger.info("Waiting marker tel");
+        logger.info("Check status auth popup");
+        authPopups.popupShouldNotBeVisible();
 
-            Header header = new Header(driver);
-            header.waitMarkerTelNumber();
-            header.waitSignInBtnIsPresent();
-            header.waitSignInBtnToBeClicable();
+        logger.info("Start of test logic. Login in LK");
+        header.clickSignInButton();
+        authPopups.popupShouldBeVisible();
 
-            logger.info("Check status auth popup");
-            AuthPopups authPopups = new AuthPopups(driver);
-            authPopups.popupShouldNotBeVisible();
+        authPopups.enterDataEmail();
+        authPopups.enterDataPassword();
+        authPopups.clickSignInBtnPopups();
 
-            logger.info("Start of test logic. Login in LK");
-            header.clickSignInButton();
-            authPopups.popupShouldBeVisible();
+        header.checkLogoUser();
+        logger.info("Login in LK success. Switch personal data page");
+        header.clickPersonalArea();
 
-            authPopups.enterDataEmail();
-            authPopups.enterDataPassword();
-            authPopups.clickSignInBtnPopups();
+        personalData.assertFieldsNameData("fname", fakerName);
+        personalData.assertFieldsNameData("fname_latin", fakerNamelatin);
+        personalData.assertFieldsNameData("lname", fakerLname);
+        personalData.assertFieldsNameData("lname_latin", fakerLnamelatin);
+        personalData.assertFieldsData();
 
-            header.checkLogoUser();
-            logger.info("Login in LK success. Switch personal data page");
-            header.clickPersonalArea();
-
-            PersonalDataPage personalData = new PersonalDataPage(driver);
-            personalData.assertFieldsData(InputFieldData.FNAME);
-            personalData.assertFieldsData(InputFieldData.FNAMELATIN);
-            personalData.assertFieldsData(InputFieldData.LNAME);
-            personalData.assertFieldsData(InputFieldData.LNAMELATIN);
-            personalData.assertFieldsData(InputFieldData.BLOGNAME);
-            personalData.assertFieldsData(InputFieldData.DATEOFBRTH);
-
-            personalData.checkFieldsDataIsEmpty();
-            logger.info("data checked");
+          logger.info("data checked");
         }
     }
 
